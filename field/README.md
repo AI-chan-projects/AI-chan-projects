@@ -1,4 +1,14 @@
 this document is about Django project to test in field ai models 
+* python==3.11.5, django==4.2.6
+* 프로젝트 폴더`field`의 `settings.py`에는 Secret Key가 비어 있습니다.
+* https://djecrety.ir/ 에서 django의 key를 발급받아 복사한 다음,
+* 아래 양식으로 json 파일을 작성하여 `field` 프로젝트 베이스 루트에 작성해 주세요.
+  
+```secrets.json
+{
+	"SECRET_KEY": "djecrety.ir에서복사한 key를 여기에 붙여주세요."
+}
+```
 
 ## Django 프로젝트 구성하는 방법(프로세스)
 
