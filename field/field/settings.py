@@ -15,7 +15,7 @@ import os, json
 from django.core.exceptions import ImproperlyConfigured
 
 # SECURITY WARNING: keep the secret key used in production secret!
-secret_file = os.path.join("/", 'secrets.json') # secrets.json 파일 위치를 명시
+secret_file = os.path.join("", 'secrets.json') # secrets.json 파일 위치를 명시
 
 with open(secret_file) as f:
     secrets = json.loads(f.read())
@@ -38,7 +38,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [''] # 외부접속시 아이피 기재 후 RUNSERVER IPADDRESS:PORT
+ALLOWED_HOSTS = ['127.0.0.1','192.168.101.234'] # 외부접속시 아이피 기재 후 RUNSERVER IPADDRESS:PORT
 
 
 # Application definition
